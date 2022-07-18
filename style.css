@@ -1,1 +1,84 @@
+/*Global Styles*/
+body {
+	background-color: var(--bg-primary);
+	font-family: var(--main-font);
+}
 
+header {
+	margin: 0 auto;
+	height: 100px;
+	padding-top: 80px;
+}
+
+footer {
+	margin: 0 auto;
+	height: 150px;
+}
+
+.wrapper {
+	max-width: 800px;
+	width: 100%;
+	min-height: calc(100vh - 250px);
+	display: flex;
+	align-items: center;
+	margin: 0 auto;
+	padding: 40px;
+}
+
+
+/*Font Styles*/
+h1 {
+	font-size: 2.5rem;
+	font-weight: 600;
+	color: var(--heading-primary);
+}
+
+h1 span {
+	font-weight: 700;
+	color: var(--text-primary);
+}
+
+h2 {
+	font-size: 1.5rem;
+	font-weight: 400;
+	color: var(--text-primary);
+}
+
+.copyright__text {
+	font-size: 0.8125rem;
+	font-weight: 400;
+	color: var(--heading-primary);
+}
+
+
+/*Coming-soon Section*/
+button {
+	color: var(--bg-primary);
+	font-size: 1.25rem;
+	font-weight: 600;
+	padding: 15px 40px;
+	background-color: var(--button-primary);
+	padding: 40px 0px;
+}
+
+button:hover {
+	background-color: rgba(79, 125, 243, 0.8);
+}
+
+.fa-brands, .fa-solid {
+	text-align: center;
+	border-radius: 90px;
+	border: 1px solid var(--heading-primary);
+	color: var(--button-primary);
+	padding: 7px;
+	margin: 0px 5px;
+	font-size: 0.9rem;
+	width: 30px;
+	height: 30px;
+}
+
+.fa-brands:hover, .fa-solid:hover {
+	background-color: var(--button-primary);
+	border: 1px solid var(--button-primary);
+	color: var(--bg-primary);
+}
