@@ -5,7 +5,7 @@ body {
 }
 
 header {
-	padding: 60px;
+	padding: 40px;
 	margin: 0 auto;
 }
 
@@ -17,7 +17,7 @@ header {
 
 footer {
 	margin: 0 auto;
-	padding: 60px;
+	padding: 40px;
 	display: flex;
     flex-direction: column;
     text-align: center;
@@ -63,7 +63,7 @@ h2 {
 .coming-soon img {
 	display: block;
 	width: 100%;
-	margin: 80px 0px;
+	margin-top: 80px;
 }
 
 button {
@@ -122,6 +122,17 @@ input  {
 	font-size: 0.8125rem;
 	color: var(--error-primary);
 	display: none;
+	padding-top: 15px;
+}
+
+.input__holder {
+	display: flex;
+	flex-direction: column;
+}
+
+
+@media all and (max-width: 781px) {
+
 }
 
 
@@ -129,7 +140,10 @@ input  {
 	button {
 		margin-left: 10px;
 		max-width: 175px;
-		display: inline-block;
+	}
+
+	form {
+		display: flex;
 	}
 }
 
