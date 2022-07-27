@@ -12,6 +12,7 @@ header {
 .logo__holder img {
 	max-width: 100%;
     display: block;
+    margin: 0 auto;
 }
 
 footer {
@@ -128,6 +129,7 @@ input  {
 	button {
 		margin-left: 10px;
 		max-width: 175px;
+		display: inline-block;
 	}
 }
 
