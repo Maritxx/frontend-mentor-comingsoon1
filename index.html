@@ -17,25 +17,28 @@
 	</head>
 
 	<body>
-		<header>
-			<img src="img/logo.svg" alt="Ping Logo">
+		<header id="siteHeader">
+			<div class="logo__holder">
+				<img src="img/logo.svg" alt="Ping Logo">
+			</div>
 		</header>
 
-		<div class="wrapper">
+		<div class="wrapper" id="pageContent">
 			<main>
 				<section class="coming-soon">
 					<h1>We are launching <span>soon!</span></h1>
 					<h2>Subscribe and get notified</h2>
-					<form method="post">
-						<input type="email" placeholder="Your email address..." name="email" required>
-						<button type="submit">Notify Me</button> 
+					<form method="post" novalidate onsubmit="return false">
+						<input id="email" type="email" placeholder="Your email address..." name="email" required>
+						<span id="result"></span>
+						<button id="formButton" type="submit">Notify Me</button> 
 					</form>
 					<img src="img/illustration-dashboard.png" alt="Ping dashboard example showing graphs">
 				</section>
 			</main>
 		</div>
 
-		<footer>
+		<footer id="siteFooter">
 			<div class="social-logo__holder">
 				<a href="" aria-label="Link to Facebook Page"><i aria-hidden="true" class="fa-brands fa-facebook-f"></i></a>
 				<a href="" aria-label="Link to Twitter Page"><i aria-hidden="true" class="fa-brands fa-twitter"></i></a>
