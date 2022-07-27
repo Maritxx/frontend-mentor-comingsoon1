@@ -61,8 +61,6 @@ const validate = () => {
   	result.style.display="block";
   	//Sets the display of the span to block, making it visbible.
 
-  	document.getElementById('email').style.marginTop = "36px";
-  	//Sets a margin to the input, making it so the input and button are centered.
 
   } else if (validateEmail(email)) {
   //If the input matches the regular expression.
@@ -70,8 +68,6 @@ const validate = () => {
   result.style.display="none";
   //Sets the display of the span to 'none', making it invisible.
 
-  document.getElementById('email').style.marginTop = "0px";
-  //Removes the margin from the input.
   }
 
     else {
@@ -81,8 +77,6 @@ const validate = () => {
      result.style.display="block"; 
      //Sets the display of the span to block, making it visbible.
 
-     document.getElementById('email').style.marginTop = "36px";
-  	 //Sets a margin to the input, making it so the input and button are centered.
   }
   return false;
   //Makes it so the form does not submit when the email isn't formatted correctly.

@@ -129,6 +129,12 @@ input  {
 }
 
 
+form {
+	padding-top: 20px;
+}
+
+
+
 @media all and (max-width: 781px) {
 	button {
 		margin-top: 10px;
@@ -144,6 +150,16 @@ input  {
 
 	form {
 		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.input__holder {
+		flex: 0 1 50%;
+	}
+
+	.button__holder {
+		flex: 0 1 25%;
 	}
 }
 
