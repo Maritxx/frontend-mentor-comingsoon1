@@ -55,25 +55,34 @@ const validate = () => {
 
 
   if (email == '') {
-  	result.innerHTML = 'this field can not be empty';
+  	result.innerHTML = 'This field cannot be empty.';
   	//Adds a string. 
 
   	result.style.display="block";
-  	
   	//Sets the display of the span to block, making it visbible.
+
+  	document.getElementById('email').style.marginTop = "36px";
+  	//Sets a margin to the input, making it so the input and button are centered.
+
   } else if (validateEmail(email)) {
   //If the input matches the regular expression.
   
   result.style.display="none";
   //Sets the display of the span to 'none', making it invisible.
+
+  document.getElementById('email').style.marginTop = "0px";
+  //Removes the margin from the input.
   }
 
     else {
-     result.innerHTML = email + ' is not valid';
+     result.innerHTML = email + ' is not valid a valid email address.';
      //Takes the value from email and adds string 'is not valid'. 
 
      result.style.display="block"; 
      //Sets the display of the span to block, making it visbible.
+
+     document.getElementById('email').style.marginTop = "36px";
+  	 //Sets a margin to the input, making it so the input and button are centered.
   }
   return false;
   //Makes it so the form does not submit when the email isn't formatted correctly.

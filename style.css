@@ -74,9 +74,7 @@ button {
 	background-color: var(--button-primary);
 	border-radius: 30px;
 	max-width: 400px;
-	display: block;
 	width: 100%;
-	margin-top: 10px;
 }
 
 button:hover {
@@ -93,7 +91,6 @@ input  {
     width: 100%;
     max-width: 400px;
     margin: 0 auto;
-    margin-top: 50px;
 }
 
 .fa-brands, .fa-solid {
@@ -121,8 +118,9 @@ input  {
 #result {
 	font-size: 0.8125rem;
 	color: var(--error-primary);
-	display: none;
 	padding-top: 15px;
+	display: none;
+	font-weight: 700;
 }
 
 .input__holder {
@@ -132,7 +130,9 @@ input  {
 
 
 @media all and (max-width: 781px) {
-
+	button {
+		margin-top: 10px;
+	}
 }
 
 
